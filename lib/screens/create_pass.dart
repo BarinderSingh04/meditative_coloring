@@ -32,9 +32,7 @@ class CreatePassword extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 96,
-            ),
+            const SizedBox(height: 96),
             Container(
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.vertical(
@@ -93,7 +91,8 @@ class CreatePassword extends StatelessWidget {
                     const SizedBox(height: 50),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        elevation: 0, backgroundColor: const Color(0xff3875FF),
+                        elevation: 0,
+                        backgroundColor: const Color(0xff3875FF),
                         fixedSize: Size(MediaQuery.of(context).size.width, 56),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(32),

@@ -16,13 +16,14 @@ class ReviewSessionScreen extends StatelessWidget {
           children: [
             const SizedBox(height: 24),
             const Text(
-              "REVIEW PAST\n SESSIONS",
+              "REVIEW PAST\nSESSIONS",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  color: Color(0xff000000),
-                  fontSize: 24,
-                  fontWeight: FontWeight.w400,
-                  fontFamily: "Calder"),
+                color: Color(0xff000000),
+                fontSize: 24,
+                fontWeight: FontWeight.w400,
+                fontFamily: "Calder",
+              ),
             ),
             const SizedBox(height: 24),
             Expanded(
