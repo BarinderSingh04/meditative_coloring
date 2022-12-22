@@ -66,14 +66,16 @@ class _SetYourIntentionState extends State<SetYourIntention> {
                   padding: const EdgeInsets.symmetric(vertical: 24.0),
                   child: PrimaryButton(
                     title: "Continue",
-                    onClick: text.isEmpty ? null : () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const SelectFocus(),
-                        ),
-                      );
-                    },
+                    onClick: text.isEmpty
+                        ? null
+                        : () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SelectFocus(),
+                              ),
+                            );
+                          },
                   ),
                 ),
               ],
@@ -104,22 +106,24 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        elevation: 0,
-        fixedSize: Size(MediaQuery.of(context).size.width, 56),
-        primary: primary ?? const Color(0xff000000),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30),
+    return AspectRatio(
+      aspectRatio: 6,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          elevation: 0,
+          backgroundColor: primary ?? const Color(0xff000000),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
         ),
-      ),
-      onPressed: onClick,
-      child: Text(
-        title.toUpperCase(),
-        style: const TextStyle(
-          color: Color(0xffFFFFFF),
-          fontSize: 18.0,
-          fontWeight: FontWeight.w500,
+        onPressed: onClick,
+        child: Text(
+          title.toUpperCase(),
+          style: const TextStyle(
+            color: Color(0xffFFFFFF),
+            fontSize: 18.0,
+            fontWeight: FontWeight.w500,
+          ),
         ),
       ),
     );

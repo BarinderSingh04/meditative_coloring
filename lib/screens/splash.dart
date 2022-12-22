@@ -29,7 +29,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
       final onBoarding = ref.read(localStorageProvider).getOnBoarding();
       final user = ref.read(localStorageProvider).getUserDetails();
 
-      await Future.delayed(const Duration(milliseconds: 800));
+      await Future.delayed(const Duration(seconds: 3));
       if (!mounted) return;
       if (onBoarding != null) {
         if (token != null && user != null) {

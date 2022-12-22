@@ -30,57 +30,57 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Meditative Coloring',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          fontFamily: "RigSans",
-          scaffoldBackgroundColor: Colors.white,
-          primaryColor: Colors.black,
-          textSelectionTheme: const TextSelectionThemeData(
-            cursorColor: Colors.black,
+      title: 'Meditative Coloring',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: "RigSans",
+        scaffoldBackgroundColor: Colors.white,
+        primaryColor: Colors.black,
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: Colors.black,
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          contentPadding: const EdgeInsets.fromLTRB(12, 16, 12, 16),
+          filled: true,
+          fillColor: Colors.white,
+          enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: Color.fromARGB(255, 207, 207, 207),
+              width: 1.0,
+            ),
+            borderRadius: BorderRadius.circular(12.0),
           ),
-          inputDecorationTheme: InputDecorationTheme(
-            contentPadding: const EdgeInsets.fromLTRB(12, 16, 12, 16),
-            filled: true,
-            fillColor: Colors.white,
-            enabledBorder: OutlineInputBorder(
-              borderSide: const BorderSide(
-                color: Color.fromARGB(255, 207, 207, 207),
-                width: 1.0,
-              ),
-              borderRadius: BorderRadius.circular(12.0),
+          focusedBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: Color.fromARGB(255, 207, 207, 207),
             ),
-            focusedBorder: OutlineInputBorder(
-              borderSide: const BorderSide(
-                color: Color.fromARGB(255, 207, 207, 207),
-              ),
-              borderRadius: BorderRadius.circular(12.0),
+            borderRadius: BorderRadius.circular(12.0),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12.0),
+            borderSide: BorderSide(
+              color: Theme.of(context).colorScheme.error,
             ),
-            focusedErrorBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12.0),
-              borderSide: BorderSide(
-                color: Theme.of(context).colorScheme.error,
-              ),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12.0),
+            borderSide: BorderSide(
+              color: Theme.of(context).colorScheme.error,
             ),
-            errorBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12.0),
-              borderSide: BorderSide(
-                color: Theme.of(context).colorScheme.error,
-              ),
+          ),
+          disabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: Color.fromARGB(255, 207, 207, 207),
+              width: 1.0,
             ),
-            disabledBorder: OutlineInputBorder(
-              borderSide: const BorderSide(
-                color: Color.fromARGB(255, 207, 207, 207),
-                width: 1.0,
-              ),
-              borderRadius: BorderRadius.circular(12.0),
-            ),
+            borderRadius: BorderRadius.circular(12.0),
           ),
         ),
-        home: const SplashScreen());
+      ),
+      home: const SplashScreen(),
+    );
   }
 }

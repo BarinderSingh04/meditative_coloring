@@ -160,9 +160,8 @@ class Profilesdeatilscreen extends StatelessWidget {
           const SizedBox(height: 24.0),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              elevation: 0,
+              elevation: 0, backgroundColor: const Color.fromARGB(255, 33, 103, 243),
               fixedSize: Size(MediaQuery.of(context).size.width, 56),
-              primary: const Color.fromARGB(255, 33, 103, 243),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),

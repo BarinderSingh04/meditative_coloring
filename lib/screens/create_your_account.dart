@@ -40,7 +40,7 @@ class CreateYourAccount extends StatelessWidget {
               const SizedBox(height: 20),
               SecondaryButton(
                 title: "Continue with Apple",
-                iconData:  "assets/images/apple.png",
+                iconData: "assets/images/apple.png",
                 onClick: () {},
               ),
               const SizedBox(height: 20),
@@ -95,7 +95,7 @@ class SecondaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedButton(
       style: OutlinedButton.styleFrom(
-        primary: const Color(0xffAAAAAA),
+        foregroundColor: const Color(0xffAAAAAA),
         backgroundColor: const Color(0xffF5F5F5),
         elevation: 0,
         fixedSize: Size(MediaQuery.of(context).size.width, 50),

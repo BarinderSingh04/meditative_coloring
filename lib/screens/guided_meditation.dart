@@ -74,7 +74,7 @@ class GuidedMeditation extends StatelessWidget {
                         ),
                         const SizedBox(height: 8),
                         TextButton(
-                          style: TextButton.styleFrom(primary: Colors.black),
+                          style: TextButton.styleFrom(foregroundColor: Colors.black),
                           onPressed: () {
                             Navigator.push(
                               context,

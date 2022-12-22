@@ -23,7 +23,8 @@ class ForgetPass extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: Color(0xff505356),
                       ),
-                      child: const Icon(Icons.chevron_left, color: Color(0xffFFFFFF)),
+                      child: const Icon(Icons.chevron_left,
+                          color: Color(0xffFFFFFF)),
                     ),
                   ],
                 ),
@@ -75,12 +76,11 @@ class ForgetPass extends StatelessWidget {
                               fontWeight: FontWeight.w400)),
                     ),
                     const SizedBox(height: 350),
-
-                     ElevatedButton(
+                    ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         elevation: 0,
+                        backgroundColor: const Color(0xff3875FF),
                         fixedSize: Size(MediaQuery.of(context).size.width, 56),
-                        primary: const Color(0xff3875FF),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(32),
                         ),
